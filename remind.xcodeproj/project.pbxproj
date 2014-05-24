@@ -12,6 +12,7 @@
 		DB33B15F19306DFE0044D883 /* HackMemoData.m in Sources */ = {isa = PBXBuildFile; fileRef = DB33B15E19306DFE0044D883 /* HackMemoData.m */; };
 		DB33B163193071D00044D883 /* HackCollectionSctionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB33B162193071D00044D883 /* HackCollectionSctionHeaderView.m */; };
 		DB33B165193082950044D883 /* 72.png in Resources */ = {isa = PBXBuildFile; fileRef = DB33B164193082950044D883 /* 72.png */; };
+		DB33B168193096A30044D883 /* HackSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB33B167193096A30044D883 /* HackSaveViewController.m */; };
 		DB9AF510192E229D00388EFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9AF50F192E229D00388EFB /* Foundation.framework */; };
 		DB9AF512192E229D00388EFB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9AF511192E229D00388EFB /* CoreGraphics.framework */; };
 		DB9AF514192E229D00388EFB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9AF513192E229D00388EFB /* UIKit.framework */; };
@@ -49,6 +50,8 @@
 		DB33B161193071D00044D883 /* HackCollectionSctionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HackCollectionSctionHeaderView.h; sourceTree = "<group>"; };
 		DB33B162193071D00044D883 /* HackCollectionSctionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HackCollectionSctionHeaderView.m; sourceTree = "<group>"; };
 		DB33B164193082950044D883 /* 72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 72.png; sourceTree = "<group>"; };
+		DB33B166193096A30044D883 /* HackSaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HackSaveViewController.h; sourceTree = "<group>"; };
+		DB33B167193096A30044D883 /* HackSaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HackSaveViewController.m; sourceTree = "<group>"; };
 		DB9AF50C192E229D00388EFB /* remind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = remind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9AF50F192E229D00388EFB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DB9AF511192E229D00388EFB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -104,6 +107,8 @@
 				DB9AF53F192E22BF00388EFB /* HackMainViewController.m */,
 				DB33B15A19305C820044D883 /* HackEditViewController.h */,
 				DB33B15B19305C820044D883 /* HackEditViewController.m */,
+				DB33B166193096A30044D883 /* HackSaveViewController.h */,
+				DB33B167193096A30044D883 /* HackSaveViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -338,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB33B168193096A30044D883 /* HackSaveViewController.m in Sources */,
 				DB9AF540192E22BF00388EFB /* HackMainViewController.m in Sources */,
 				DB33B15C19305C820044D883 /* HackEditViewController.m in Sources */,
 				DB9B6BEB193045050084090C /* HackCollectionViewCell.m in Sources */,

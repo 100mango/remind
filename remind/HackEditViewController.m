@@ -56,7 +56,7 @@
     self.titleField.placeholder = @"请输入标题";
     [self.view addSubview:self.titleField];
     
-    _textView = [[UITextView alloc]initWithFrame:CGRectMake(20, 150, 320, 300)];
+    _textView = [[UITextView alloc]initWithFrame:CGRectMake(20, 150, 320, 200)];
     [self.view addSubview:self.textView];
 }
 
@@ -89,13 +89,13 @@
 {
     NSDictionary *parameters = @{@"pic_id":@"1",@"title":@"asd",@"content":@"nihao"};
     
-    [self.manager POST:@"ds1" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [self.manager POST:@"http://hackday213.duapp.com/add.php" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
-        NSString *URL = (NSString*)responseObject;
+        
+        NSString *URL = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
         NSLog(@"%@",URL);
-        
-        [[NSApplicationDirectory d]]
-        
+        //NSLog(@"%d",[[UIApplication sharedApplication]canOpenURL:[NSURL URLWithString:@"http://www.baidu.com"]]);
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://hackday213.duapp.com/search.php?id=10"]];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];
