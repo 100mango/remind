@@ -13,9 +13,9 @@
 @interface HackSaveViewController ()
 
 @property (strong,nonatomic) UITableView *tableView;
-@property (strong,nonatomic) NSArray *iconNameArray;
-@property (strong,nonatomic) NSArray *titleArray;
-@property (strong,nonatomic) NSArray *contentArray;
+@property (strong,nonatomic) NSMutableArray *iconNameArray;
+@property (strong,nonatomic) NSMutableArray *titleArray;
+@property (strong,nonatomic) NSMutableArray *contentArray;
 @property (strong,nonatomic) UIButton *addNewbutton;
 @end
 
@@ -64,9 +64,9 @@ static NSString *reuseIdentifier = @"reuseTableCell";
 {
     //取数据
     NSUserDefaults * userDefault = [NSUserDefaults standardUserDefaults];
-    _iconNameArray = [userDefault objectForKey:@"iconName"];
-    _titleArray = [userDefault objectForKey:@"title"];
-    _contentArray = [userDefault objectForKey:@"content"];
+    _iconNameArray = [[userDefault objectForKey:@"iconName"] mutableCopy];
+    _titleArray = [[userDefault objectForKey:@"title"] mutableCopy];
+    _contentArray = [[userDefault objectForKey:@"content"] mu];
     //刷新数据
     [self.tableView reloadData];
 }
@@ -104,16 +104,41 @@ static NSString *reuseIdentifier = @"reuseTableCell";
     NSLog(@"%d",self.iconNameArray.count);
     return [self.iconNameArray count];
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     HackTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
     [cell configureCellWithNumber:indexPath.row IconName:[self.iconNameArray objectAtIndex:indexPath.row] Titile:[self.titleArray objectAtIndex:indexPath.row]];
     return cell;
 }
+
+
+//删除选择列，更新颜色值数组
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    [self.iconNameArray removeObjectAtIndex:indexPath.row];
+    [self.titleArray removeObjectAtIndex:indexPath.row];
+    [self.contentArray removeObjectAtIndex:indexPath.row];
+    //保存进本地
+    NSUserDefaults * userDefault = [NSUserDefaults standardUserDefaults];
+    [userDefault setObject:self.iconNameArray forKey:@"iconName"];
+    [userDefault setObject:self.titleArray forKey:@"title"];
+    [userDefault setObject:self.contentArray forKey:@"content"];
+    [userDefault synchronize];
+    
+    [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
 #pragma mark -Table View delegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 60;
 }
 
+// 返回cell editing的样式
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
 @end

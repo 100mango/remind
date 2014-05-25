@@ -11,5 +11,4 @@
 @interface HackEditViewController : UIViewController<UITextViewDelegate,NSLayoutManagerDelegate,UITextFieldDelegate>
 
 - (void)updateControllerWithIconName:(NSString*)name;
-- (void)refleshTableView;
 @end

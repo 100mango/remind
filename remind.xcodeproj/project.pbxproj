@@ -19,7 +19,6 @@
 		DB9AF51A192E229D00388EFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB9AF518192E229D00388EFB /* InfoPlist.strings */; };
 		DB9AF51C192E229D00388EFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9AF51B192E229D00388EFB /* main.m */; };
 		DB9AF520192E229D00388EFB /* HackAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9AF51F192E229D00388EFB /* HackAppDelegate.m */; };
-		DB9AF522192E229D00388EFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB9AF521192E229D00388EFB /* Images.xcassets */; };
 		DB9AF529192E229D00388EFB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9AF528192E229D00388EFB /* XCTest.framework */; };
 		DB9AF52A192E229D00388EFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9AF50F192E229D00388EFB /* Foundation.framework */; };
 		DB9AF52B192E229D00388EFB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9AF513192E229D00388EFB /* UIKit.framework */; };
@@ -27,6 +26,7 @@
 		DB9AF535192E229D00388EFB /* remindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9AF534192E229D00388EFB /* remindTests.m */; };
 		DB9AF540192E22BF00388EFB /* HackMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9AF53F192E22BF00388EFB /* HackMainViewController.m */; };
 		DB9B6BEB193045050084090C /* HackCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9B6BEA193045050084090C /* HackCollectionViewCell.m */; };
+		DBD7E2791931A3E300913E84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD7E2781931A3E300913E84 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +62,6 @@
 		DB9AF51D192E229D00388EFB /* remind-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "remind-Prefix.pch"; sourceTree = "<group>"; };
 		DB9AF51E192E229D00388EFB /* HackAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HackAppDelegate.h; sourceTree = "<group>"; };
 		DB9AF51F192E229D00388EFB /* HackAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackAppDelegate.m; sourceTree = "<group>"; };
-		DB9AF521192E229D00388EFB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DB9AF527192E229D00388EFB /* remindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = remindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9AF528192E229D00388EFB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DB9AF530192E229D00388EFB /* remindTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "remindTests-Info.plist"; sourceTree = "<group>"; };
@@ -72,6 +71,7 @@
 		DB9AF53F192E22BF00388EFB /* HackMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HackMainViewController.m; sourceTree = "<group>"; };
 		DB9B6BE9193045050084090C /* HackCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HackCollectionViewCell.h; sourceTree = "<group>"; };
 		DB9B6BEA193045050084090C /* HackCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HackCollectionViewCell.m; sourceTree = "<group>"; };
+		DBD7E2781931A3E300913E84 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +161,7 @@
 				DB9B6BE8193044600084090C /* View */,
 				DB9AF51E192E229D00388EFB /* HackAppDelegate.h */,
 				DB9AF51F192E229D00388EFB /* HackAppDelegate.m */,
-				DB9AF521192E229D00388EFB /* Images.xcassets */,
+				DBD7E2781931A3E300913E84 /* Images.xcassets */,
 				DB9AF516192E229D00388EFB /* Supporting Files */,
 			);
 			path = remind;
@@ -288,7 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB9AF51A192E229D00388EFB /* InfoPlist.strings in Resources */,
-				DB9AF522192E229D00388EFB /* Images.xcassets in Resources */,
+				DBD7E2791931A3E300913E84 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

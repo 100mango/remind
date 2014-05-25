@@ -38,10 +38,12 @@
 {
     if (number %2 == 0) {
         self.backGroundView.image = [UIImage imageNamed:@"title1"];
+        self.backgroundColor = [UIColor colorWithRed:255/255.0 green:168/255.0 blue:0/255.0 alpha:1];
     }
     else
     {
         self.backGroundView.image = [UIImage imageNamed:@"title2"];
+        self.backgroundColor = [UIColor colorWithRed:255/255.0 green:196/255.0 blue:38/255.0 alpha:1];
     }
     
     self.iconView.image = [UIImage imageNamed:name];
