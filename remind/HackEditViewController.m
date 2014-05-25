@@ -61,6 +61,7 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self.textView resignFirstResponder];
+    [self.titleField resignFirstResponder];
 }
 
 #pragma mark -setupView

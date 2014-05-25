@@ -66,7 +66,7 @@ static NSString *reuseIdentifier = @"reuseTableCell";
     NSUserDefaults * userDefault = [NSUserDefaults standardUserDefaults];
     _iconNameArray = [[userDefault objectForKey:@"iconName"] mutableCopy];
     _titleArray = [[userDefault objectForKey:@"title"] mutableCopy];
-    _contentArray = [[userDefault objectForKey:@"content"] mu];
+    _contentArray = [[userDefault objectForKey:@"content"] mutableCopy];
     //刷新数据
     [self.tableView reloadData];
 }
@@ -101,7 +101,6 @@ static NSString *reuseIdentifier = @"reuseTableCell";
 #pragma mark -Table View dataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"%d",self.iconNameArray.count);
     return [self.iconNameArray count];
 }
 

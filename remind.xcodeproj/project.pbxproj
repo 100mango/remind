@@ -52,7 +52,7 @@
 		DB33B167193096A30044D883 /* HackSaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HackSaveViewController.m; sourceTree = "<group>"; };
 		DB33B1691930A2FE0044D883 /* HackTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HackTableViewCell.h; sourceTree = "<group>"; };
 		DB33B16A1930A2FE0044D883 /* HackTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HackTableViewCell.m; sourceTree = "<group>"; };
-		DB9AF50C192E229D00388EFB /* remind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = remind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB9AF50C192E229D00388EFB /* Post It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Post It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9AF50F192E229D00388EFB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DB9AF511192E229D00388EFB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DB9AF513192E229D00388EFB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -135,7 +135,7 @@
 		DB9AF50D192E229D00388EFB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DB9AF50C192E229D00388EFB /* remind.app */,
+				DB9AF50C192E229D00388EFB /* Post It.app */,
 				DB9AF527192E229D00388EFB /* remindTests.xctest */,
 			);
 			name = Products;
@@ -228,7 +228,7 @@
 			);
 			name = remind;
 			productName = remind;
-			productReference = DB9AF50C192E229D00388EFB /* remind.app */;
+			productReference = DB9AF50C192E229D00388EFB /* Post It.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DB9AF526192E229D00388EFB /* remindTests */ = {
@@ -469,7 +469,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "remind/remind-Prefix.pch";
 				INFOPLIST_FILE = "remind/remind-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "Post It";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -483,7 +484,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "remind/remind-Prefix.pch";
 				INFOPLIST_FILE = "remind/remind-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "Post It";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
