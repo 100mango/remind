@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HackEditViewController : UIViewController
+@interface HackEditViewController : UIViewController<UITextViewDelegate,NSLayoutManagerDelegate,UITextFieldDelegate>
 
 - (void)updateControllerWithIconName:(NSString*)name;
+- (void)refleshTableView;
 @end

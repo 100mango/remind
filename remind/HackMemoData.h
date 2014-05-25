@@ -13,4 +13,5 @@
 @property (strong,readonly,nonatomic) NSArray *nameSectionArray;
 
 +(HackMemoData *)sharedInstance;
+
 @end

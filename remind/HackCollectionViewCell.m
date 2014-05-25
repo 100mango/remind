@@ -20,9 +20,9 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        _remindTitle = [[UILabel alloc]initWithFrame:CGRectMake(0, 100, 100, 130)];
-        [self addSubview:self.remindTitle];
-        _imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+        //_remindTitle = [[UILabel alloc]initWithFrame:CGRectMake(0, 100, 100, 130)];
+        //[self addSubview:self.remindTitle];
+        _imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 140/2, 140/2)];
         [self addSubview:self.imageView];
     }
     return self;
@@ -30,7 +30,7 @@
 
 - (void)setCellWithIconName:(NSString*)name
 {
-    self.remindTitle.text = name;
+    //self.remindTitle.text = name;
     NSString *imagename = [NSString stringWithFormat:@"%@.png",name];
     self.imageView.image = [UIImage imageNamed:imagename];
 }

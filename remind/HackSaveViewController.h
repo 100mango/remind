@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HackSaveViewController : UIViewController
+@interface HackSaveViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end

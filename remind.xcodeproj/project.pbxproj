@@ -11,8 +11,8 @@
 		DB33B15C19305C820044D883 /* HackEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB33B15B19305C820044D883 /* HackEditViewController.m */; };
 		DB33B15F19306DFE0044D883 /* HackMemoData.m in Sources */ = {isa = PBXBuildFile; fileRef = DB33B15E19306DFE0044D883 /* HackMemoData.m */; };
 		DB33B163193071D00044D883 /* HackCollectionSctionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB33B162193071D00044D883 /* HackCollectionSctionHeaderView.m */; };
-		DB33B165193082950044D883 /* 72.png in Resources */ = {isa = PBXBuildFile; fileRef = DB33B164193082950044D883 /* 72.png */; };
 		DB33B168193096A30044D883 /* HackSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB33B167193096A30044D883 /* HackSaveViewController.m */; };
+		DB33B16B1930A2FE0044D883 /* HackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB33B16A1930A2FE0044D883 /* HackTableViewCell.m */; };
 		DB9AF510192E229D00388EFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9AF50F192E229D00388EFB /* Foundation.framework */; };
 		DB9AF512192E229D00388EFB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9AF511192E229D00388EFB /* CoreGraphics.framework */; };
 		DB9AF514192E229D00388EFB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9AF513192E229D00388EFB /* UIKit.framework */; };
@@ -27,7 +27,6 @@
 		DB9AF535192E229D00388EFB /* remindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9AF534192E229D00388EFB /* remindTests.m */; };
 		DB9AF540192E22BF00388EFB /* HackMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9AF53F192E22BF00388EFB /* HackMainViewController.m */; };
 		DB9B6BEB193045050084090C /* HackCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9B6BEA193045050084090C /* HackCollectionViewCell.m */; };
-		DB9B6BED193051A90084090C /* NARUTO.full.1595769.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB9B6BEC193051A90084090C /* NARUTO.full.1595769.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +48,10 @@
 		DB33B15E19306DFE0044D883 /* HackMemoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HackMemoData.m; sourceTree = "<group>"; };
 		DB33B161193071D00044D883 /* HackCollectionSctionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HackCollectionSctionHeaderView.h; sourceTree = "<group>"; };
 		DB33B162193071D00044D883 /* HackCollectionSctionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HackCollectionSctionHeaderView.m; sourceTree = "<group>"; };
-		DB33B164193082950044D883 /* 72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 72.png; sourceTree = "<group>"; };
 		DB33B166193096A30044D883 /* HackSaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HackSaveViewController.h; sourceTree = "<group>"; };
 		DB33B167193096A30044D883 /* HackSaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HackSaveViewController.m; sourceTree = "<group>"; };
+		DB33B1691930A2FE0044D883 /* HackTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HackTableViewCell.h; sourceTree = "<group>"; };
+		DB33B16A1930A2FE0044D883 /* HackTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HackTableViewCell.m; sourceTree = "<group>"; };
 		DB9AF50C192E229D00388EFB /* remind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = remind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9AF50F192E229D00388EFB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DB9AF511192E229D00388EFB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,7 +72,6 @@
 		DB9AF53F192E22BF00388EFB /* HackMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HackMainViewController.m; sourceTree = "<group>"; };
 		DB9B6BE9193045050084090C /* HackCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HackCollectionViewCell.h; sourceTree = "<group>"; };
 		DB9B6BEA193045050084090C /* HackCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HackCollectionViewCell.m; sourceTree = "<group>"; };
-		DB9B6BEC193051A90084090C /* NARUTO.full.1595769.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NARUTO.full.1595769.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,14 +156,12 @@
 		DB9AF515192E229D00388EFB /* remind */ = {
 			isa = PBXGroup;
 			children = (
-				DB33B164193082950044D883 /* 72.png */,
 				DB33B16019306E080044D883 /* Model */,
 				DB33B15919305C610044D883 /* Controller */,
 				DB9B6BE8193044600084090C /* View */,
 				DB9AF51E192E229D00388EFB /* HackAppDelegate.h */,
 				DB9AF51F192E229D00388EFB /* HackAppDelegate.m */,
 				DB9AF521192E229D00388EFB /* Images.xcassets */,
-				DB9B6BEC193051A90084090C /* NARUTO.full.1595769.jpg */,
 				DB9AF516192E229D00388EFB /* Supporting Files */,
 			);
 			path = remind;
@@ -206,6 +203,8 @@
 				DB9B6BEA193045050084090C /* HackCollectionViewCell.m */,
 				DB33B161193071D00044D883 /* HackCollectionSctionHeaderView.h */,
 				DB33B162193071D00044D883 /* HackCollectionSctionHeaderView.m */,
+				DB33B1691930A2FE0044D883 /* HackTableViewCell.h */,
+				DB33B16A1930A2FE0044D883 /* HackTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -288,9 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB9B6BED193051A90084090C /* NARUTO.full.1595769.jpg in Resources */,
 				DB9AF51A192E229D00388EFB /* InfoPlist.strings in Resources */,
-				DB33B165193082950044D883 /* 72.png in Resources */,
 				DB9AF522192E229D00388EFB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +343,7 @@
 				DB33B168193096A30044D883 /* HackSaveViewController.m in Sources */,
 				DB9AF540192E22BF00388EFB /* HackMainViewController.m in Sources */,
 				DB33B15C19305C820044D883 /* HackEditViewController.m in Sources */,
+				DB33B16B1930A2FE0044D883 /* HackTableViewCell.m in Sources */,
 				DB9B6BEB193045050084090C /* HackCollectionViewCell.m in Sources */,
 				DB33B163193071D00044D883 /* HackCollectionSctionHeaderView.m in Sources */,
 				DB9AF51C192E229D00388EFB /* main.m in Sources */,

@@ -34,12 +34,9 @@
 {
     self = [super init];
     if (self != nil) {
-        NSArray *one = @[@"72",@"72",@"72",@"72",@"72",@"72"];
-        NSArray *two = @[@"72",@"72",@"72",@"72",@"72",@"72"];
-        NSArray *three = @[@"72",@"72",@"72",@"72",@"72",@"72"];
-        NSArray *four = @[@"72",@"72",@"72",@"72",@"72",@"72"];
+        NSArray *one = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14",@"15"];
         
-        self.nameSectionArray = @[one,two,three,four];
+        self.nameSectionArray = @[one];
     }
     
     return self;

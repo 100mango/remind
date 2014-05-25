@@ -7,15 +7,15 @@
 //
 
 #import "HackAppDelegate.h"
-#import "HackMainViewController.h"
+#import "HackSaveViewController.h"
 @implementation HackAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    HackMainViewController *mainViewController = [[HackMainViewController alloc]init];
-    UINavigationController *rootNavigationController = [[UINavigationController alloc]initWithRootViewController:mainViewController];
+    HackSaveViewController *saveViewController = [[HackSaveViewController alloc]init];
+    UINavigationController *rootNavigationController = [[UINavigationController alloc]initWithRootViewController:saveViewController];
     
     self.window.rootViewController = rootNavigationController;
     self.window.backgroundColor = [UIColor whiteColor];
