@@ -46,6 +46,7 @@
         self.backgroundColor = [UIColor colorWithRed:255/255.0 green:196/255.0 blue:38/255.0 alpha:1];
     }
     
+    
     self.iconView.image = [UIImage imageNamed:name];
     self.titleLabel.text = titile;
 }
